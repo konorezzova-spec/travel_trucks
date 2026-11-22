@@ -16,8 +16,8 @@
   --background: var(--white);
   --foreground: var(--main);
 
-  --font-family: 'Inter', sans-serif;
-  --second-family: 'Manrope', sans-serif;
+  --font-family: var(--inter), sans-serif;
+  --second-family: var(--manrope), sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -43,7 +43,7 @@ body {
   flex-direction: column;
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-family);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
