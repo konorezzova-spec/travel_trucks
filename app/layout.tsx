@@ -27,19 +27,12 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
-  children,
-  modal,
-}: {
-  children: React.ReactNode;
-  modal: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${inter.variable} ${manrope.variable}`}>
       <body>
         <Header />
         {children}
-        {modal}
       </body>
     </html>
   );
