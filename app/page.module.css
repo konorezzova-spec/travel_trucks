@@ -1,0 +1,51 @@
+.container {
+  padding-top: 195px;
+  padding-bottom: 325px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/Hero.webp');
+  align-items: flex-start;
+  font-family: var(--font-family);
+  color: var(--inputs);
+
+  @media screen and (min-width: 1440px) {
+    background-position: center -74px;
+  }
+  h1 {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 67%;
+    margin-bottom: 16px;
+  }
+
+  p {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 133%;
+    margin-bottom: 40px;
+  }
+
+  a {
+    border-radius: 200px;
+    width: 173px;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--grey-green);
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -0.01em;
+    color: var(--white);
+
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  a:hover,
+  a:focus-visible {
+    background: var(--green-hover);
+  }
+}
